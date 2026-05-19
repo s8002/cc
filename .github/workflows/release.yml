@@ -14,12 +14,7 @@ concurrency:
 
 jobs:
   release:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - os: windows-2022
+    runs-on: windows-2022
 
     steps:
       - name: Checkout
